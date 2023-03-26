@@ -61,7 +61,7 @@ const Contact = () => {
 
 
     return (
-        <div id="contact" className='bg-background  text-white pt-24 font-primary pb-12 px-12 md:px-32 min-h-screen'>
+        <div id="contact" className='bg-background  text-white pt-24 font-primary px-12 md:px-32 min-h-screen'>
             <div className=''>
                 <h1 className='text-3xl md:text-5xl'>Contact</h1>
                 <p className='text-gray-300 text-sm md:text-md my-2'>Hey, if you could follow me on my socials, that would be super awesome! Let's connect and have a chat sometime. 🙂</p>

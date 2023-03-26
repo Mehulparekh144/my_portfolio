@@ -2,9 +2,9 @@ import React from 'react'
 import { AiFillGithub } from 'react-icons/ai'
 import { BiLink } from 'react-icons/bi'
 import { useInView } from 'react-intersection-observer'
-import airglobe from '../assets/images/airglobe.jpeg'
-import musiclab from '../assets/images/musiclab.jpeg'
-import soundboom from '../assets/images/soundboom.jpeg'
+import airglobe from '../assets/images/airglobe.png'
+import musiclab from '../assets/images/musiclab.png'
+import soundboom from '../assets/images/soundboom.png'
 import { motion } from 'framer-motion'
 
 const Projects = () => {
@@ -76,9 +76,9 @@ const Projects = () => {
         {projects.map((projectItem, key) => (
           <motion.div
             variants={containerItems}
-            key={key} className={`md:flex justify-between gap-5  py-6 px-6  my-3 ${key % 2 !== 0 ? 'flex-row-reverse' : ''}`}>
-            <div className='transition-all ease-in-out relative w-full'>
-              <img className='shadow- shadow-primary w-full h-full object-cover' src={projectItem.img} />
+            key={key} className={`md:flex justify-between items-center gap-5  py-6 px-6  my-3 ${key % 2 !== 0 ? 'flex-row-reverse' : ''}`}>
+            <div className='w-full  md:w-max'>
+              <img className='w-full h-full shadow-primary object-contain' src={projectItem.img} />
             </div>
             <div>
               <h1 className='text-3xl my-3 text-primary'>{projectItem.name}</h1>

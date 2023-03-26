@@ -8,6 +8,8 @@ import { Link } from 'react-scroll'
 const Home = () => {
     const { ref, inView } = useInView({ threshold: 0.8 })
 
+
+
     const animation = {
         hidden: { opacity: 0, x : 20 },
         visible: {
@@ -23,7 +25,7 @@ const Home = () => {
     return (
         <div
         id='home'
-            className='bg-background  text-white pt-24 font-primary px-12 md:px-32 min-h-screen'>
+            className=' bg-background relative  text-white pt-24 font-primary  px-12 md:px-32 h-screen'>
             <motion.div
                 ref={ref}
                 initial="hidden"
@@ -37,8 +39,8 @@ const Home = () => {
                     <h1 ><span className='text-primary'>Mehul 🙂 </span>here</h1>
                 </div>
                 <div className='flex flex-col gap-2'>
-                    <p className='text-md md:text-3xl text-gray-500'>I am FullStack Developer</p>
-                    <p className='text-sm md:text-xl text-gray-500'>My main areas of interest are web development, <span className='text-primary'>Data science, Machine learning, and UI/UX design</span>.
+                    <p className='text-l md:text-3xl text-gray-500'>I am FullStack Developer</p>
+                    <p className='text-md md:text-xl text-gray-500'>My main areas of interest are web development, <span className='text-primary'>Data science, Machine learning, and UI/UX design</span>.
                         I am constantly seeking new challenges and opportunities to further develop my skills and knowledge in these fields.</p>
                 </div>
                 <div className='my-6'>
@@ -47,7 +49,7 @@ const Home = () => {
 
             </motion.div>
             <Link to='projects' smooth spy>
-                <p className='animate-pulse cursor-pointer absolute left-1/2 bottom-5'>
+                <p className='animate-pulse cursor-pointer absolute left-1/2 bottom-5 -translate-x-1/2 p-12'>
                     <CgChevronDoubleDown size={30} />
                 </p>
             </Link>
