@@ -81,11 +81,11 @@ const Contact = () => {
             <form onSubmit={handleFormSubmit} className='flex flex-col gap-3 md:w-1/2 my-6 md:my-12'>
                 <div className='flex gap-1 flex-col justify-center'>
                     <label htmlFor="name">Name</label>
-                    <input value={name} onChange={(e) => setName(e.target.value)} type="text" id='name' placeholder='John Doe' />
+                    <input value={name} onChange={(e) => setName(e.target.value)} type="text" id='name' placeholder='John Doe' required/>
                 </div>
                 <div className='flex gap-1 flex-col justify-center'>
                     <label htmlFor="email">Email</label>
-                    <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" id='email' placeholder='johndoe@mail.com' />
+                    <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" id='email' placeholder='johndoe@mail.com' required/>
                 </div>
                 <div className='flex gap-1 flex-col justify-center'>
                     <label htmlFor="Message">Message</label>

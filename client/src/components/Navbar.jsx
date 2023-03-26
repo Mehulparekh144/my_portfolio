@@ -15,7 +15,7 @@ const Navbar = () => {
     return (
         <div className='relative '>
             <nav className={`bg-background bg-opacity-30 backdrop-blur-lg font-display fixed md:py-6 top-0 left-0 bottom-5  h-[60px] z-50 flex w-full justify-evenly items-center text-white`}>
-                <h1 className='font-display font-bold text-3xl'>MP</h1>
+                <h1 className='font-display font-bold text-3xl hover:text-primary transition-colors ease-in-out'>MP</h1>
                 <motion.button
                     whileHover={{ scale: 1.1 }}
                     whileFocus={{ scale: 5 }}
