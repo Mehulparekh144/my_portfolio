@@ -6,7 +6,7 @@ const Alert = ({isOpen , type , message}) => {
         {
             isOpen && 
             <div className={` absolute ${type === "success"? 'bg-emerald-500' : 'bg-red-500' } w-full text-center md:w-max px-4 py-2 rounded-xl `}>
-                {message} Hey
+                {message} 
             </div>
 
         }
