@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { MdEmail } from 'react-icons/md'
 import axios from 'axios'
@@ -15,11 +15,17 @@ const Contact = () => {
     const [isOpen  , setIsOpen] = useState(false)
     const [alertMessage , setAlertMessage] = useState("")
 
-    setTimeout(()=>{
-        setIsOpen(false)   
-        setAlertMessage("")
-                
-    },8000)
+    useEffect(() => {
+        let timeoutId = setTimeout(() => {
+            setIsOpen(false)
+            setAlertMessage("")
+        }, 8000)
+
+        return () => {
+            clearTimeout(timeoutId)
+        }
+    }, [isOpen])
+
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
