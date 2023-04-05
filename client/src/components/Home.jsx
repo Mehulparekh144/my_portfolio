@@ -39,7 +39,7 @@ const Home = () => {
                     <h1 ><span className='text-primary'>Mehul 🙂 </span>here</h1>
                 </div>
                 <div className='flex flex-col gap-2'>
-                    <p className='text-l md:text-3xl text-gray-500'>I am FullStack Developer</p>
+                    <p className='text-l md:text-3xl text-gray-500'>I am an aspiring Frontend Developer</p>
                     <p className='text-md md:text-xl text-gray-500'>My main areas of interest are web development, <span className='text-primary'>Data science, Machine learning, and UI/UX design</span>.
                         I am constantly seeking new challenges and opportunities to further develop my skills and knowledge in these fields.</p>
                 </div>
