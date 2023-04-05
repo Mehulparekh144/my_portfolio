@@ -4,6 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 @font-face {
     font-family: "Caxo";
     src: url("./assets/fonts/Caxo.otf");

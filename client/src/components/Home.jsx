@@ -4,6 +4,7 @@ import { useInView } from 'react-intersection-observer'
 import { CgChevronDoubleDown } from 'react-icons/cg'
 import doc from '../assets/docs/Mehul_Resume_2023.pdf'
 import { Link } from 'react-scroll'
+import {ImDownload} from 'react-icons/im'
 
 const Home = () => {
     const { ref, inView } = useInView({ threshold: 0.8 })
@@ -34,17 +35,17 @@ const Home = () => {
             >
                 <div
                     className='flex mt-32 text-2xl md:text-5xl my-3  items-center'>
-                    <h1>Hello</h1>
+                    <h1>Hello,</h1>
                     <h1 className='animate-bounce'>👋</h1>
-                    <h1 ><span className='text-primary'>Mehul 🙂 </span>here</h1>
+                    <h1 ><span className='text-primary font-bold'>Mehul </span>here</h1>
                 </div>
-                <div className='flex flex-col gap-2'>
-                    <p className='text-l md:text-3xl text-gray-500'>I am an aspiring Frontend Developer</p>
-                    <p className='text-md md:text-xl text-gray-500'>My main areas of interest are web development, <span className='text-primary'>Data science, Machine learning, and UI/UX design</span>.
+                <div className='flex flex-col gap-5'>
+                    <p className='text-l md:text-3xl text-gray-500'>I am an aspiring <span className='text-primary font-extrabold'>Frontend Developer</span> </p>
+                    <p className='text-md md:text-xl text-gray-500'>My main areas of interest are  <span className='text-primary font-bold'>Web Development , Data science, Machine learning, and UI/UX </span>.
                         I am constantly seeking new challenges and opportunities to further develop my skills and knowledge in these fields.</p>
                 </div>
                 <div className='my-6'>
-                    <a href={doc}  download="My_Resume.pdf" className='tap-button'>Resume</a>
+                    <a href={doc}  download="My_Resume.pdf" className='tap-button flex gap-3 items-center'>Resume <ImDownload/> </a>
                 </div>
 
             </motion.div>
