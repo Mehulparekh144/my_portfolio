@@ -67,13 +67,13 @@ const Contact = () => {
                 <p className='text-gray-300 text-sm md:text-md my-2'>Hey, if you could follow me on my socials, that would be super awesome! Let's connect and have a chat sometime. 🙂</p>
                 <div className='md:hidden flex gap-3'>
                     <a href='https://github.com/Mehulparekh144' target={"_blank"} className='bg-white text-primary p-2 rounded-full transition-all hover:scale-110 hover:bg-primary hover:text-white'>
-                        <AiFillGithub size={15} />
+                        <AiFillGithub size={20} />
                     </a>
                     <a href='https://linkedin.com/in/mehul-parekh-a519a9196/' target={"_blank"} className='bg-white text-primary p-2 rounded-full transition-all hover:scale-110 hover:bg-primary hover:text-white'>
-                        <AiFillLinkedin size={15} />
+                        <AiFillLinkedin size={20} />
                     </a>
                     <a href='mailto:mehulparekh144@gmail.com' target={"_blank"} className='bg-white text-primary p-2 rounded-full transition-all hover:scale-110 hover:bg-primary hover:text-white'>
-                        <MdEmail size={15} />
+                        <MdEmail size={20} />
                     </a>
                 </div>
             </div>

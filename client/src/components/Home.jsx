@@ -44,7 +44,7 @@ const Home = () => {
                     <p className='text-md md:text-xl text-gray-500'>My main areas of interest are  <span className='text-primary font-bold'>Web Development , Data science, Machine learning, and UI/UX </span>.
                         I am constantly seeking new challenges and opportunities to further develop my skills and knowledge in these fields.</p>
                 </div>
-                <div className='my-6'>
+                <div className='my-6 w-max'>
                     <a href={doc}  download="My_Resume.pdf" className='tap-button flex gap-3 items-center'>Resume <ImDownload/> </a>
                 </div>
 
