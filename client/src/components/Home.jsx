@@ -2,7 +2,6 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { CgChevronDoubleDown } from 'react-icons/cg'
-import doc from '../assets/docs/Mehul_Resume_2023.pdf'
 import { Link } from 'react-scroll'
 import {ImDownload} from 'react-icons/im'
 
@@ -45,7 +44,7 @@ const Home = () => {
                         I am constantly seeking new challenges and opportunities to further develop my skills and knowledge in these fields.</p>
                 </div>
                 <div className='my-6 w-max'>
-                    <a href={doc}  download="My_Resume.pdf" className='tap-button flex gap-3 items-center'>Resume <ImDownload/> </a>
+                    <a href="https://drive.google.com/file/d/1L_85ccTw_EbHqx1OYQNwSjv82oDMyMEY/view?usp=sharing" target='_blank'  download="My_Resume.pdf" className='tap-button flex gap-3 items-center'>Resume <ImDownload/> </a>
                 </div>
 
             </motion.div>
