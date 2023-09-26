@@ -4,6 +4,7 @@ import { BiLink } from 'react-icons/bi'
 import { useInView } from 'react-intersection-observer'
 import airglobe from '../assets/images/airglobe.png'
 import musiclab from '../assets/images/musiclab.png'
+import joblinker from '../assets/images/joblinker.png'
 import soundboom from '../assets/images/soundboom.png'
 import { motion } from 'framer-motion'
 
@@ -17,6 +18,15 @@ const Projects = () => {
       tech: ['ReactJS', 'MongoDB', "ExpressJS", "NodeJS", "Redux", "Stripe", 'ContextAPI', "TailwindCSS"],
       img: soundboom,
       git: "https://github.com/Mehulparekh144/SoundBoom_MERN_Ecommerce"
+
+    },
+    {
+      name: 'JobLinker',
+      link: 'https://joblinker.vercel.app/',
+      desc: 'JobLinker is a cutting-edge job connection platform developed with React, TypeScript, ExpressJS, NodeJS, Zustand state management, and integrated with Supabase. It empowers job seekers to apply while uploading their resumes and recruiters to post jobs .',
+      tech: ['ReactJS', 'Supabase', "ExpressJS", "NodeJS", "Zustand", "Framer Motion", "TailwindCSS"],
+      img: joblinker,
+      git: "https://github.com/Mehulparekh144/JobLinker"
 
     },
     {
