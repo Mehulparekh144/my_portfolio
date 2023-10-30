@@ -6,11 +6,21 @@ import airglobe from '../assets/images/airglobe.png'
 import musiclab from '../assets/images/musiclab.png'
 import joblinker from '../assets/images/joblinker.png'
 import soundboom from '../assets/images/soundboom.png'
+import protrackr from '../assets/images/protrackr.png'
 import { motion } from 'framer-motion'
 
 const Projects = () => {
   const { ref, inView } = useInView({ threshold: 0.1 })
   const projects = [
+    {
+      name: 'Protrackr',
+      link: 'https://protrackr-issue-tracker.vercel.app/',
+      desc: 'Issue Tracker Pro is a robust issue tracking system powered by TRPC NextJS 13, designed to streamline issue management. It enables users to create teams, assign issues, manage users, view issue details, set deadlines, prioritize tasks, and track issue statuses, making it an invaluable tool for optimizing workflow efficiency, ensuring transparency, and achieving project milestones with ease.',
+      tech: ['NextJS', 'TRPC', "Typescript", "Prisma", "PostgreSQL", "shadCN", 'Next-Auth', "TailwindCSS"],
+      img: protrackr,
+      git: "https://github.com/Mehulparekh144/Issue-Tracker"
+
+    },
     {
       name: 'SoundBoom',
       link: 'https://soundboom.vercel.app/',
@@ -24,7 +34,7 @@ const Projects = () => {
       name: 'JobLinker',
       link: 'https://joblinker.vercel.app/',
       desc: 'JobLinker is a cutting-edge job connection platform developed with React, TypeScript, ExpressJS, NodeJS, Zustand state management, and integrated with Supabase. It empowers job seekers to apply while uploading their resumes and recruiters to post jobs .',
-      tech: ['ReactJS', 'Supabase', "ExpressJS", "NodeJS", "Zustand", "Framer Motion", "TailwindCSS"],
+      tech: ['ReactJS', 'Typescript', 'Supabase', "ExpressJS", "NodeJS", "Zustand", "Framer Motion", "TailwindCSS"],
       img: joblinker,
       git: "https://github.com/Mehulparekh144/JobLinker"
 
